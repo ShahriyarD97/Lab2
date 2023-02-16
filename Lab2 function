@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+# A function that uses command line arguments. This function will print two variables used, the script and then the script AND variables.
+
+import sys
+
+print(f"Script name: {sys.argv[0]}")
+
+if len(sys.argv) > 1:
+    args_str = ' '.join(sys.argv[1:])
+    print(f"Script name and arguments: {sys.argv[0]} {args_str}")
+else:
+    print("No arguments were passed.")
